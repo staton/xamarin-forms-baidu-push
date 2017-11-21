@@ -1,6 +1,3 @@
-# xamarin-forms-baidu-push
-Baidu Push Android bindings for Xamarin Forms
-
 ///////////////////////////////////////////////////////////////////////////////////////////////
 // To get started, you can include the following class into your Xamarin.Android project
 // 在Xamarin.Android的项目你可以包括此文件。
