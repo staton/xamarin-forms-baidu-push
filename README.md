@@ -1,48 +1,48 @@
 # xamarin-forms-baidu-push
-Baidu Push Android bindings for Xamarin Forms
+## Baidu Push Android bindings for Xamarin Forms
 
 ///////////////////////////////////////////////////////////////////////////////////////////////
-// To get started, you can include the following class into your Xamarin.Android project
-// 在Xamarin.Android的项目你可以包括此文件。
-//
-//
-//
-// But first, add the following permissions:
-// 首先在AndroidManifest.xml，添加这些权限：
-//
-// <!-- Push service 运行需要的权限 -->
-// <uses-permission android:name="android.permission.INTERNET" />
-// <uses-permission android:name="android.permission.READ_PHONE_STATE" />
-// <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-// <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
-// <uses-permission android:name="android.permission.WRITE_SETTINGS" />
-// <uses-permission android:name="android.permission.VIBRATE" />
-// <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-// <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
-// <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-// <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-// <!-- 富媒体需要声明的权限 -->
-// <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER"/>
-// <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
-// <uses-permission android:name="android.permission.EXPAND_STATUS_BAR" />
-//
-//
-//
-// Next, add the following <meta-data /> to AndroidManifest.xml, between the <application></application> tags:
-// 然后添加这个<meta-data />的代码在<application></application>的中间。
-//		<application ...>
-//			<meta-data android:name="baidu_api_key" android:value="Your api key/你的api密钥" />
-//		</application>
-//
-// 
-//
-// If you still need help, you can look at the guide for Baidu Push (Android SDK).
-// 若还是不清楚，可以查看百度推送通知的安卓SDK的指南。
-// http://push.baidu.com/doc/android/api
-//
+### To get started, you can include the following class into your Xamarin.Android project
+### 在Xamarin.Android的项目你可以包括此文件。
+
+### But first, add the following permissions:
+### 首先在AndroidManifest.xml，添加这些权限：
+```
+<!-- Push service 运行需要的权限 -->
+<uses-permission android:name="android.permission.INTERNET" />
+<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+<uses-permission android:name="android.permission.WRITE_SETTINGS" />
+<uses-permission android:name="android.permission.VIBRATE" />
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+<uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+<!-- 富媒体需要声明的权限 -->
+<uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER"/>
+<uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+<uses-permission android:name="android.permission.EXPAND_STATUS_BAR" />
+```
+
+
+### Next, add the following <meta-data /> to AndroidManifest.xml, between the <application></application> tags:
+### 然后添加这个<meta-data />的代码在<application></application>的中间。
+```
+<application ...>
+	<meta-data android:name="baidu_api_key" android:value="Your api key/你的api密钥" />
+</application>
+```
+
+
+
+### If you still need help, you can look at the guide for Baidu Push (Android SDK).
+### 若还是不清楚，可以查看百度推送通知的安卓SDK的指南。
+http://push.baidu.com/doc/android/api
+
 ///////////////////////////////////////////////////////////////////////////////////////////////
 
-
+```
 [BroadcastReceiver(Name = "@PACKAGE_NAME@.BaiduPushMessageReceiver")]
 [IntentFilter(
 	new string[]
@@ -157,3 +157,4 @@ public class BaiduPushMessageReceiver : PushMessageReceiver
 
 	public override void OnUnbind(Context context, int errorCode, string requestId) { }
 }
+```
