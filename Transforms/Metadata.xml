@@ -1,0 +1,12 @@
+<metadata>
+  <attr path="/api/package[@name='com.baidu.loctp.str']/class[@name='BDLocManager.WifiList']/field[@name='_WifiList']" name="name">WifiListx</attr>
+  <attr path="/api/package[@name='com.baidu.android.pushservice']/class[@name='PushMessageReceiver.b']/field[@name='b']" name="name">BB</attr>
+  <attr path="/api/package[@name='com.baidu.android.pushservice']/class[@name='PushMessageReceiver.a']" name="obfuscated">false</attr>
+  <attr path="/api/package[@name='com.baidu.android.pushservice']/class[@name='PushMessageReceiver.a']" name="visibility">public</attr>
+  <attr path="/api/package[@name='com.baidu.android.pushservice']/class[@name='PushMessageReceiver.b']" name="obfuscated">false</attr>
+  <attr path="/api/package[@name='com.baidu.android.pushservice']/class[@name='PushMessageReceiver.b']" name="visibility">public</attr>
+  <attr path="/api/package[@name='com.baidu.android.pushservice']/class[@name='PushMessageReceiver.1']" name="obfuscated">false</attr>
+  <attr path="/api/package[@name='com.baidu.android.pushservice']/class[@name='PushMessageReceiver.1']" name="visibility">public</attr>
+  <attr path="/api/package[@name='com.baidu.android.pushservice']/class[@name='PushMessageReceiver.2']" name="obfuscated">false</attr>
+  <attr path="/api/package[@name='com.baidu.android.pushservice']/class[@name='PushMessageReceiver.2']" name="visibility">public</attr>
+</metadata>
